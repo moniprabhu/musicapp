@@ -20,26 +20,32 @@ public class Album {
     }
 
     public String getTrackname() {
+
         return trackname;
     }
 
     public void setTrackname(String trackname) {
+
         this.trackname = trackname;
     }
 
     public String getTrackartist() {
+
         return trackartist;
     }
 
     public void setTrackartist(String trackartist) {
+
         this.trackartist = trackartist;
     }
 
     public String getGenre() {
+
         return genre;
     }
 
     public void setGenre(String genre) {
+
         this.genre = genre;
     }
 
