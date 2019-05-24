@@ -37,15 +37,30 @@ public class MuzixServiceImpl implements MuzixService {
     public List<Album> getAllAlbums() {
         return muzixRepository.findAll();
     }
+
     @Override
-    public Album updateTrack(Album album) throws IdNotFoundException {
+    public List<Album> getByName(String trackname) throws TrackNotFoundException {
+        List<Album> albums=muzixRepository.getByName(trackname);
+        if(albums.isEmpty())
+        {
+            throw new TrackNotFoundException("Track id not found");
+        }
+        return albums;
+    }
+    @Override
+    public Album putUpdateTrack(Album album) throws IdNotFoundException {
+        Album savedAlbum;
         if(muzixRepository.existsById(album.getTrackid()))
         {
-            throw new IdNotFoundException("Track id already exist");
+            savedAlbum=muzixRepository.save(album);
+            return savedAlbum;
         }
-        Album updateTrack=muzixRepository.save(album);
-        return updateTrack;
+        else{
+            throw new IdNotFoundException("Track id not found");
+        }
+
     }
+
     @Override
     public boolean deleteTrack(int trackid) throws TrackNotFoundException {
     boolean status=false;
@@ -61,4 +76,5 @@ public class MuzixServiceImpl implements MuzixService {
 
 
 }
+
 }

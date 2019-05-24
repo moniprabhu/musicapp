@@ -11,11 +11,13 @@ import java.util.List;
 public interface MuzixService {
 
         public Album saveAlbum(Album album )throws TrackAlreadyExistsException;
-        public Album updateTrack(Album album) throws IdNotFoundException;
+        public Album putUpdateTrack(Album album) throws IdNotFoundException;
         public boolean deleteTrack(int trackid)throws TrackNotFoundException;
+
 
         public List<Album> getAllAlbums();
 
-    }
+   public List<Album> getByName(String trackname) throws TrackNotFoundException;
+}
 
 
