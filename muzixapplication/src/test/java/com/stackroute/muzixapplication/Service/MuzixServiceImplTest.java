@@ -40,6 +40,7 @@ public class MuzixServiceImplTest {
         album.setTrackid(101);
         album.setTrackname("believer");
         album.setTrackartist("john");
+        album.setGenre("rock");
         list = new ArrayList<>();
         list.add(album);
 
