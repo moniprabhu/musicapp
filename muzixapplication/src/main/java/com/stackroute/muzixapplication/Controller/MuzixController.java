@@ -64,6 +64,7 @@ public class MuzixController {
         catch(TrackNotFoundException exception){
             responseEntity=new ResponseEntity<String>(exception.getMessage(),HttpStatus.CONFLICT);
         }
+        //catch global execption
         return responseEntity;
     }
         @GetMapping("album")

@@ -11,6 +11,7 @@ public class MuzixapplicationApplicationTests {
 
 	@Test
 	public void contextLoads() {
+
 	}
 
 }
