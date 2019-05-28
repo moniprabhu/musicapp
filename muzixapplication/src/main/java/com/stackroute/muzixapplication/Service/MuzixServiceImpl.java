@@ -1,6 +1,6 @@
 package com.stackroute.muzixapplication.Service;
 
-import com.stackroute.muzixapplication.Respository.MuzixRepository;
+import com.stackroute.muzixapplication.respository.MuzixRepository;
 import com.stackroute.muzixapplication.domain.Album;
 import com.stackroute.muzixapplication.exception.IdNotFoundException;
 import com.stackroute.muzixapplication.exception.TrackAlreadyExistsException;
@@ -38,15 +38,15 @@ public class MuzixServiceImpl implements MuzixService {
         return muzixRepository.findAll();
     }
 
-    @Override
-    public List<Album> getByName(String trackname) throws TrackNotFoundException {
-        List<Album> albums=muzixRepository.getByName(trackname);
-        if(albums.isEmpty())
-        {
-            throw new TrackNotFoundException("Track id not found");
-        }
-        return albums;
-    }
+//    @Override
+//    public List<Album> getByName(String trackname) throws TrackNotFoundException {
+//        List<Album> albums=muzixRepository.getByName(trackname);
+//        if(albums.isEmpty())
+//        {
+//            throw new TrackNotFoundException("Track id not found");
+//        }
+//        return albums;
+//    }
     @Override
     public Album putUpdateTrack(Album album) throws IdNotFoundException {
         Album savedAlbum;

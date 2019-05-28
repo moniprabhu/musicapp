@@ -1,11 +1,9 @@
-package com.stackroute.muzixapplication.Controller;
+package com.stackroute.muzixapplication.controller;
 
 import com.stackroute.muzixapplication.Service.MuzixService;
 import com.stackroute.muzixapplication.domain.Album;
 import com.stackroute.muzixapplication.exception.IdNotFoundException;
-import com.stackroute.muzixapplication.exception.TrackAlreadyExistsException;
 import com.stackroute.muzixapplication.exception.TrackNotFoundException;
-import io.swagger.annotations.Api;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
@@ -72,17 +70,17 @@ public class MuzixController {
             return  new ResponseEntity<List<Album>>(muzixService.getAllAlbums(),HttpStatus.OK);
         }
 
-    @GetMapping("/album/{trackname}")
-    public ResponseEntity<List<Album>> getByName (@PathVariable String trackname) {
-        ResponseEntity responseEntity;
-        try {
-
-            return new ResponseEntity<List<Album>>( muzixService.getByName(trackname) , HttpStatus.OK);
-        } catch (Exception ex) {
-            responseEntity = new ResponseEntity<String>(ex.getMessage(), HttpStatus.CONFLICT);
-        }
-        return responseEntity;
-    }
+//    @GetMapping("/album/{trackname}")
+//    public ResponseEntity<List<Album>> getByName (@PathVariable String trackname) {
+//        ResponseEntity responseEntity;
+//        try {
+//
+//            return new ResponseEntity<List<Album>>( muzixService.getByName(trackname) , HttpStatus.OK);
+//        } catch (Exception ex) {
+//            responseEntity = new ResponseEntity<String>(ex.getMessage(), HttpStatus.CONFLICT);
+//        }
+//        return responseEntity;
+//    }
 
 
 

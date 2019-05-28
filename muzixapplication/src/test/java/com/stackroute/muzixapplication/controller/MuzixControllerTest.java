@@ -1,4 +1,4 @@
-package com.stackroute.muzixapplication.Controller;
+package com.stackroute.muzixapplication.controller;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.stackroute.muzixapplication.Service.MuzixService;
@@ -25,7 +25,6 @@ import org.springframework.test.web.servlet.setup.MockMvcBuilders;
 import java.util.ArrayList;
 import java.util.List;
 
-import static org.junit.Assert.*;
 import static org.mockito.ArgumentMatchers.any;
 import static org.mockito.Mockito.when;
 

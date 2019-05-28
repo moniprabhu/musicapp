@@ -1,6 +1,6 @@
 package com.stackroute.muzixapplication.Service;
 
-import com.stackroute.muzixapplication.Respository.MuzixRepository;
+import com.stackroute.muzixapplication.respository.MuzixRepository;
 import com.stackroute.muzixapplication.domain.Album;
 import com.stackroute.muzixapplication.exception.TrackAlreadyExistsException;
 import org.junit.Assert;
@@ -13,7 +13,6 @@ import org.mockito.MockitoAnnotations;
 import java.util.ArrayList;
 import java.util.List;
 
-import static org.junit.Assert.*;
 import static org.mockito.ArgumentMatchers.any;
 import static org.mockito.Mockito.*;
 import static org.mockito.Mockito.when;

@@ -1,4 +1,4 @@
-package com.stackroute.muzixapplication.Respository;
+package com.stackroute.muzixapplication.respository;
 
 import com.stackroute.muzixapplication.domain.Album;
 import org.junit.After;
@@ -8,14 +8,9 @@ import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.autoconfigure.data.mongo.DataMongoTest;
-import org.springframework.boot.test.autoconfigure.orm.jpa.DataJpaTest;
-import org.springframework.boot.test.autoconfigure.web.servlet.WebMvcTest;
-import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.context.junit4.SpringRunner;
 
 import java.util.List;
-
-import static org.junit.Assert.*;
 
 @RunWith(SpringRunner.class)
 //@SpringBootTest
@@ -32,9 +27,9 @@ public class MuzixRepositoryTest {
     {
         album = new Album();
         album.setTrackid(101);
-        album.setTrackname("cheaptrills");
-        album.setTrackartist("sia");
-        album.setGenre("rock");
+        album.setTrackname("munbeva");
+        album.setTrackartist("sherya");
+        album.setGenre("melody");
 
     }
 
@@ -69,7 +64,7 @@ public class MuzixRepositoryTest {
         muzixRepository.save(u1);
 
         List<Album> list = muzixRepository.findAll();
-        Assert.assertEquals("neeyum nanum",list.get(0).getTrackname());
+        Assert.assertEquals("cheaptrills",list.get(0).getTrackname());
 
 
 

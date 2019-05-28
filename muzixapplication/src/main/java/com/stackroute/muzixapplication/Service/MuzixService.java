@@ -17,7 +17,7 @@ public interface MuzixService {
 
         public List<Album> getAllAlbums();
 
-   public List<Album> getByName(String trackname) throws TrackNotFoundException;
+//   public List<Album> getByName(String trackname) throws TrackNotFoundException;
 }
 
 
