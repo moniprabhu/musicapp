@@ -66,8 +66,6 @@ public class MuzixServiceImplTest {
         System.out.println("savedUser" + savedAlbum);
         Assert.assertEquals(album,savedAlbum);
 
-       /*doThrow(new UserAlreadyExistException()).when(userRepository).findById(eq(101));
-       userService.saveUser(user);*/
 
 
     }
