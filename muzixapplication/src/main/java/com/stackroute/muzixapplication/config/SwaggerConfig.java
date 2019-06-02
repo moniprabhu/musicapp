@@ -20,7 +20,7 @@ package com.stackroute.muzixapplication.config;
 //    }
 //
 //    private ApiInfo appInfo(){
-//        ApiInfo apiInfo = new ApiInfo("Muzix API(playmusic)","Spring boot Application for sound tracks","1.0","Terms Of Service",new Contact("monisha","http://yahoo.com","monishaa2701@gmail.com"),"Apache License Version 2.0","https://www.apache.org/license.html");
+//        ApiInfo apiInfo = new ApiInfo("Muzix API(playmusic)","Spring boot Application for sound tracks","1.0","Terms Of service",new Contact("monisha","http://yahoo.com","monishaa2701@gmail.com"),"Apache License Version 2.0","https://www.apache.org/license.html");
 //        return apiInfo;
 //    }
 //

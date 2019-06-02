@@ -1,4 +1,4 @@
-package com.stackroute.muzixapplication.Service;
+package com.stackroute.muzixapplication.service;
 
 import com.stackroute.muzixapplication.domain.Album;
 import com.stackroute.muzixapplication.exception.IdNotFoundException;

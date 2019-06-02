@@ -1,6 +1,6 @@
 package com.stackroute.muzixapplication.controller;
 
-import com.stackroute.muzixapplication.Service.MuzixService;
+import com.stackroute.muzixapplication.service.MuzixService;
 import com.stackroute.muzixapplication.domain.Album;
 import com.stackroute.muzixapplication.exception.IdNotFoundException;
 import com.stackroute.muzixapplication.exception.TrackNotFoundException;

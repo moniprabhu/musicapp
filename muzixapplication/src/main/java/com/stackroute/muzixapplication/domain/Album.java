@@ -12,6 +12,8 @@ import org.springframework.data.mongodb.core.mapping.Document;
 //@Entity
 @Document
 @Data
+@AllArgsConstructor
+@NoArgsConstructor
 
 public class Album {
 @Id
